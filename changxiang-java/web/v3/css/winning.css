@@ -1,0 +1,74 @@
+@charset "utf-8";
+/*================================================
+Version:0.0.1
+Author:LeoCmq
+================================================*/
+/* 开奖信息 */
+
+.winning_number_list li{padding: 1.33rem; }
+.winning_info h4{line-height: 1.5rem; vertical-align: middle;}
+.winning_info .type{ font-size: 1.33rem; color: #333; }
+.winning_info .balls{ margin-top: .66rem; font-size: 0;}
+.winning_info .ballnew{margin-top: .66rem;}
+.sfc-ballicon , .sfc-ballicon2{ font-family:tahoma; font-weight:700; width:1.3rem; height:2.18rem; line-height:2.18rem; background-color:#ccc; text-align:center; color:#fff; background-color:#ec4d35; border-radius:0.2rem; display:block; float:left;/*display:block; float:left;*/}
+.sfc-ballicon{ margin-left:2px;font-size:1.33rem;}
+.sfc-ballicon2{margin-left:6px; font-size:1.33rem;}
+
+
+.winning_info .i-redball, .winning_info .i-blueball{width: 2.6rem; height: 2.6rem; line-height: 2.6rem; font-size: 1.33rem; margin-right: .33rem; text-align:center; border-radius:50%; font-weight:700;}
+.winning_number_list .i-arrowR{display: block; height: auto;}
+.winning_info .nums{ font-weight: 700; margin-top: .33rem;/* font-size: 1.33rem;*/ font-size:1.4rem;}
+
+.winning_basic_info{padding: 1.33rem; background-color: #fff;}
+.winning_basic_info h2{color: #333; font-size: 1.33rem;}
+.winning_balls{padding-top: 1rem;}
+.winning_balls .i-redball_s,.winning_balls .i-blueball_s{width: 2.66rem; line-height: 2.66rem; height: 2.66rem;font-size: 1.33rem; font-weight:500;}
+
+.i-total_sold{background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAARCAYAAADDjbwNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF1SURBVDhPtZSrSwVBGMXXR1LEaDEYBINBFEER/ANMdgWLwSTXYDGJzWJQ8YJ/gMEtt2kRVmRl37AIitFgEUTEB5hcfyPfyOxlLxf2rgcOM/M9ztnZGcbqBLZt9wRBsB6G4R7jcRHJ1eGYtJQDAlswa0ff91ekpRziOB7kq2+KxE1iNC8t5YHIMGYPRQaaqkbKO0OSJKOYvReZEP/KsqxbSstDXQgE95sNNDG6l9Ly4Iz6EGs0i5vE6EzKWyOKokWK7ygOGM/hCdNDuMO8JnFT+BRumDFKjkSuGOqmUPRhNrXhLmfRpXqZm9d+81ewCCTn4JtR3JJ8zDc7X5PWP5Crk/uE4xLKg6YZkq+G2AW7m2VcIL4M1UuwDQ9gg/WStOagLglaU7LMg6Zp04T5pTpwSVcDhCfhizaBV2ma9ku6GvBrJhB+1ibs5Np13QFJVwPHcXoRf9Im0FNvmKSrg3oeEH8Uk9t/MdHwPG+E37fKOCShimFZP1dTDVIoE15NAAAAAElFTkSuQmCC") no-repeat left center;}
+.i-total_prize{background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFlSURBVEhLvVNLToRAEG2voLcwMV7AvcaVxzHRvXsXxju4mFsQfiFEZlYsgCDshpAQ2JBY1ut0TxpkMeBgJS9Uv673qrsAQSvF/xo3TUNlWVIcxxRFEQVBQK7rSiAHhz3UoHYqDsZ931NRFAOTYwENtPDQIY3ruqYwDCdFcwAPeEnjtm1/FeCqeZ5TVVXUdd3gJMjBYQ81qB3r4SmSJDkQZsc5Mb4xPIXZESdZGtBqH3iuZ7zGKNI0JYHvURMa6PiXlwfPwShOBTkK0zjLssU/CLR6LY2nZjz3l56cseM4H5owsGO82Lb9wLi0LOucx3sGIAeHPdSo2oEenoKT7XjjBNiNjV8Ze2N9LKCBVq75xJ8YxbtBZIxb3/dv+PnI3IaBq+55/Q0gV9wGNar2jpExpxu9CZ7VtUFoLJ4xmnuedyUQnNwz+WUWLEQOL2mqgztdMJ55c9GMWfuE2yi76Zg7YyUzQogfSUdmXkA/eg0AAAAASUVORK5CYII=") no-repeat left center;}
+
+.prize_info{padding-top: 1.33rem; margin-top: 1.33rem; background-position: center top; }
+.prize_info > .b-flex:last-child{padding-left:1.33rem ;}
+.prize_info > .b-flex:first-child{padding-right: 1rem;}
+.prize_info .i-total_sold,.prize_info .i-total_prize{ line-height: 1.16rem; padding-left: 1.5rem; background-size: auto 0.7rem; color: #9f9f9f;}
+.prize_info .nums{font-size: 1.16rem; margin-top: .3rem;}
+.prize_info strong{font-size: 1.33rem;}
+.prize_info .spline{display: block; width: 1px; background-repeat:no-repeat; background-position: center center; background-size: 1px 2.54rem;}
+
+.m-common_tbl .td{padding: 0; height: 2.45rem;}
+
+.p-winning_ssq.fullscreen,.p-winning_gp.fullscreen{padding-bottom: 6.45rem;}
+.p-winning_ssq.fullscreen+.footer,.p-winning_gp.fullscreen+.footer{margin-top: -5rem;}
+
+.winning_jj{ line-height:2rem; display:block; height:2rem; margin-top:0.5rem;}
+.winning_jj .tsta{ font-size:1.25rem; font-weight:900; display:inline-block; margin-top:0.2rem;}
+.winning_jj .j-blueball{width: 2rem; height: 2rem; line-height: 2rem; text-align:center; font-size: 1.16rem; margin-right: .33rem; background:#438ed3; border-radius:50%; color:#fff; display:inline-block; font-weight:600;}
+.kaijiang-time{line-height:1.8rem; margin-top:1rem;}
+.kaijiang-dis{line-height:1.8rem;}
+
+/*竞彩*/
+.jc-box{ height:43px; border-radius:0.625rem; color:#fff; margin-top:0.83rem; margin-right:1rem;}
+.jc-box i[class^="logo-"]{}
+.jc-box.jz{ background:#60c339;}
+.jc-box.jl{ background:#eb8658;}
+.jc-box .f_c{ text-align:center;}
+
+.jc-info_tit{ height:3.33rem; position:relative; z-index:5;}
+.jc-info_tit .jc-info_titfix{ position:fixed; height:3.33rem; border-bottom:1px solid #ddd; box-sizing:border-box; padding:0 1.33rem; background:#fff; width:100%;}
+.jc-tit_l{ position:relative; height:3.33rem; width:8.33rem; line-height:3.33rem; }
+.jc-tit_l .jc-tit_lfix{ width:7.5rem; box-sizing:border-box; border:1px solid #ddd; position:absolute; top:3.25rem; left:-1.33rem; list-style-type:none; background:#fff;}
+.jc-tit_l .jc-tit_lfix li{ height:2.5rem; line-height:2.5rem; padding-left:1.33rem; width:7.5rem; box-sizing:border-box; border-bottom:1px solid #ddd; color:#666;}
+.jc-tit_l .jc-tit_lfix li:last-child{ border-bottom:none;}
+.jc-tit_rcal{ width:11rem; text-align:right; line-height:3.33rem;}
+.jc-con_tbtitfix{ position:relative; height:2.5rem;}
+.jc-con_tbtit{ height:2.5rem;}
+.jc-con_tbtit.fix{position: fixed;}
+.jc-con_tbtit th{height:2.5rem; text-align:center; color:#999; border:1px solid #ddd; border-style:none solid solid solid; background:#fafafa;}
+.jc-con_tbtit td{ text-align:center; padding:0.66rem 0; border:1px solid #ddd;}
+
+.fotbox{ height:6rem; position:relative;}
+.fotboxfix{ position:fixed; bottom:0; height:6rem; background:#fff; border-top:1px solid #ddd; width:100%; box-sizing:border-box; padding:1.25rem 1.33rem;}
+
+.i-dworvar{ background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAR7SURBVFhH1VlbaxNBFI4P/gN9UEH9CWp3W1FUBKlik4r3Bx8VFVSsD4pKrPjWov4EfVKxreKtUUEEBe9a7xcq3hDpg9ltmgS7TdJmPN9sZrrbTZqdZNumB4ZMduec883ZM2fOnAmFqqRUuG6WEa5vNCLaMSOsdRth/Ru1dKFRn57xd/WNGFulusrYOciI1hKPaKYR0ZlKs3m0lkkBH29ePDce1jqdAJOt+9ng5XMs8/QBG/79g+VTAyyfzdiN+niGd4Md51ny5AHX5CDr78Ylcyoz2zhcbHfdTPq0bQLowOGdHMCI+ZepEnjACxly4iQbOgIB3h+um0+f8Q+EJ3ZvYtb1i6oYS44fvHaBy4Rs6ICuqkAbzdoaYYX02RMsnxkKDKwQBJmQLa1NOisCbUb0bUKI1d0RONCxAq3uTgk63qTvUAJtNulrBdjsh54JBysUQJfR3MCBA4Mv0PAjATb36c2kgRWKoFPo71+/eMG4oLFSxQLDJ5oqsmJdNuiw3jdu9BChC4tgqil9trUAWmsramVsCiJ0TUQ0UDUAMMiQR9g8oMUOFmScVQXpiRwU8+0YrXe5ANu5gc53n1qjgSO7OGhX7kEbxEE8RE5Qa4RtnC9AwiitHA/rCTwcMdRzg4meIDBxtyCMHLBwB2RdfmikP85S7cdY8vhelnn5yA+La0y25ynnTbUdZZDlh4BNuoWdfPt3h/SZ6Oi+v6GBDT2460cnH4OxBvHI/OR01BcvXNWOy/WNIQrOUfzJPH/oizl5wp6tbAB9P1aWF2OcYMGfjO4ry4cBwFbYSKIh6sTwZ/j3T1/M2fevmLFxmRf0vRsl+Yfu3fSAhQzI8kPAVjBQjABrX/Enn0z44eVjsq8eM3Pzcjfo5npm3b3mkYFnBr1zfhXwZnue+NYHbDa/9hUukeaA6UijQlg85pYVXtC3r0gxFvU9YIkn+/qZiiqOreAS6YoBc0u/fVEc9K0OZlErCpZ4VMkNuAKXcCpEDmtuXemxtAcsjak0t3a7hOKiK2Yd5LDmtlUlj/t4V01u7V50imGt1OfMfX7LzO2rPaDxLPflnaoXuMa7w5rYOGjPrpZyvR9coDnY3o/ViuVlAblxyK2ZihxBUO57Ly+YpE61MPSDIFGAkRlbTSc/VHhxJT9IgGR6GYBbBGFRp4zBzoI7UD1OppcygadkudZIJPB96xbNdp06cAyB6WvqiHTjUvEjEpDX3iE0wxJ77Lqb0bR0XtGT8+gxv3XKPcNxzG8vWUyxy6p6H3eN6VBIwUymValKmH5aFQMlaGe51ZHjTpRzW7evyjxEudwqQHsL2mpJvp/J5TOZYAraAnRiQ8NCeWVAYcai2BgUQZYIXdABXb5qwuUGFS5l2sW5DLsPv5TxWVdwThA8RS5l2gO7lHFOBgFc7IgCPDIpAEDOikQ7n0oylsvyhv7wn1/8Xalrr5KbQjkrqry3bz/rDoksz1WnKHPRyHmId1IuFsdOioVCM+TVrX1yiVHZ9gf9/kNDn9odFGsQKjEWPCrGGTv2P5BrqJ/saMgaAAAAAElFTkSuQmCC") no-repeat; background-size:1.22rem auto; width:1.22rem; height:1.22rem; margin-left:0.5rem;}
+.i-dworvar.fold{ transform:rotate(180deg);-webkit-transform:rotate(180deg);}
+.i-wincalendar{ background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAYAAABXuSs3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIISURBVGhD7ZpNTsMwEIVzg25BSGGF6FXgGJHyo9ytS7qABZdB7bKiXRUhwbwwKSEk8djjWKrqShap4nnzeTIeOzVJYvEpiiLN8/yZ/h7R+Dq1kGi6+tIR+yWHL9S+uo3gX8UC3NGXjtgvRxrgC264/hQL/ILjial1xH7bSLcG/e9SIV86SVmWd/TIV9Te+6mA72OgYwBDGlodsIERrA1PVVX3JLobc6Z12NX1FIAdmBOMgsXXdH099bh9PWIXHbCR3Rq2YAZ4kx4maC5jXiaV6yRneLAeUFOb8iaZWL7KmEbnxGsJnrJTLD4fuM6y7FYy6G4fsnPWcQK3BZyjfwSfI6qiymaT46Ehh/zFVAn9FKwiTqXvgdpmalvAi9gGffuD0dr3SunPuiPJcQl0q4O+A+DGQU/ZO4N3Ir0YSw3qgz364CqstVeDm/LZBO5qf7ngSIezShXLyblVTs5/9s6pQq9LjwS/FZTDN/Ttg2vtncFNkyrkfasFKCSYyVcEN0XI9/3LiLh2k6S1d64qlnU8brLUb0CSrS+cxE3WRCmyqira/bTWPtTkjJss9eT0vfpp9KxyXOPIt20E9x1Rk975R9zmKMUUjbnv13V9xb+YHU6HVzSAJ9yY27mrPr233oCRwVfYXyypTR4Xml6SA98H67IJAM4N+dhwHxjiz/8FGHzvwdiccdLnG7EUjwIO8X3+AAAAAElFTkSuQmCC") no-repeat; background-size:1.27rem auto; width:1.3rem; height:1.3rem; margin-left:0.5rem; }

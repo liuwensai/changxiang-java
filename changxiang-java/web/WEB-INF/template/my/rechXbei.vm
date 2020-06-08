@@ -1,0 +1,156 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="keywords" content=""/>
+<meta name="description" content=""/>
+<title>我的彩票</title>
+<link rel="stylesheet" href="/css/base.css"/>
+<link rel="stylesheet" href="/css/core.css"/>
+<link rel="stylesheet" href="/css/userCenter/common.css"/>
+<link rel="stylesheet" href="/css/userCenter/myLott.css"/>
+<link rel="stylesheet" href="/css/userCenter/bankLogo.css"/>
+<link rel="stylesheet" href="/css/newpay/account_recharge.css"/>
+<link rel="stylesheet" href="/css/newpay/account_comm.css"/>
+<script src="/js/jquery-1.7.2.min.js"></script>
+<script src="/js/local.js"></script>
+	<script type="text/javascript" src="/js/jquery/jquery.qrcode.min.js"></script>
+	<script type="text/javascript" src="/js/utf.js"></script>
+	<script type="text/javascript" src="/js/newpay/comm.js"></script>
+	<script type="text/javascript" src="/js/newpay/layer.js"></script>
+	<script type="text/javascript" src="/js/newpay/pc_comm.js"></script>
+</head>
+<body class="">
+#parse("/head.vm")
+<article class="docBody clearfix">
+    #set($listint=3)
+	#parse("/my/MyList.vm")
+    <div class="rightModule">
+		<ul class="redTab">
+			#if($xbei=='0')<li#if($pay=='xbei') class="active"#end><a href="/my/Rechange.jzh?pay=xbei" target="_self">在线支付</a></li>#end
+			
+			<!--<li#if($pay=='chinabank') class="active"#end><a href="/my/Rechange.jzh?pay=chinabank" target="_self">支付宝</a></li>
+			#if($alipay=='0')<li#if($pay=='alipay') class="active"#end><a href="/my/Rechange.jzh?pay=alipay" target="_self">qq支付</a></li>#end
+			#if($huichao=='0')<li#if($pay=='yeepay') class="active"#end><a href="/my/Rechange.jzh?pay=yeepay" target="_self">网银</a></li>#end
+			-->
+			<li><a href="/my/Rechange!RechDesc.jzh" target="_self">充值记录</a></li>
+		</ul>
+	
+	 <div class="orderDataBox grayBorder">
+			
+		    <div class="wide-content fr">        
+		    <div class="tab-box account-tab">
+	
+            <div class="tab-content">
+                    <div class="p0 inline-recharge inline-yyb">
+                       
+                            <div class="clear mt20 inline-input" id="divInlineInput">
+                                <label>充值金额：</label>
+                                <div class="input-text"><input   type="number"   id="txtRechargeMoney" name="money" value="50" placeholder="请输入充值金额"><i></i></div>
+                                <div class="fast-input">
+                                    <ul class="c-dark clear" id="ulFastInput" data-type="yyb">
+                                            <li class="border">50元</li>
+                                            <li class="border">100元</li>
+                                            <li class="border">200元</li>
+                                            <li class="border">300元</li>
+                                            <li class="border">400元</li>
+                                            <li class="border">500元</li>
+                                            <li class="border">600元</li>
+                                            <li class="border">700元</li>
+                                            <li class="border">800元</li>
+                                            <li class="border">900元</li>
+                                            <li class="border">1000元</li>
+                                            <li class="border">2000元</li>
+                                            <li class="border">3000元</li>
+                                            <li class="border">4000元</li>
+                                            <li class="border">5000元</li>
+                                            <li class="border">6000元</li>
+                                            <li class="border">7000元</li>
+                                            <li class="border">8000元</li>
+                                            <li class="border">9000元</li>
+                                            <li class="border">10000元</li>
+                                            <li class="border">20000元</li>
+                                            <li class="border">30000元</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--<p class="inline-prompt"><i></i>建议使用IE浏览器继续，以便正常使用。</p>-->
+                            <div class="inline-remarks c-red"> <span style="color:#F00">充值自动到账</span>，免收手续费，最小充值金额50元。</div>
+                            <button class="inline-submit" id="bankCardSumbit1" type="button">确认，去支付充值</button>
+                            <div class="inline-checkbox clear"><input id="quickPayCheckBox1" checked="checked" type="checkbox"><label for="cboInlineCheckbox">我同意《</label><span class="c-link"><a>支付许可协议</a></span><label for="cboInlineCheckbox">》</label></div>                        
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+		
+			
+         
+<form action="http://www.pk1175.com/pay/youyunbao/B2CPay.jsp" method="post" id="myform" target="_blank">
+	<input type="hidden" name="p_username" value="$!user.user_name"/>
+	<input type="hidden" name="p_money" id="v_money" value=""/>
+	<input type="hidden" name="p_type" id="v_type" value="0"/>
+</form>
+ 
+<script>
+var menoy=""; 
+$('#txtRechargeMoney').keyup(function(){
+	var m = $(this).val().replace(/\D/g,'');
+	$(this).val(m);
+	$('#v_money').val(m);
+	$('#v_smmoney').val(m); 
+	menoy=m;
+});
+$('input[name="service_type"]').change(function(){
+	$('#v_type').val(this.value);
+}); 
+
+$('#bankCardSumbit1').click(function(){
+if($('#quickPayCheckBox1').is(":checked")){
+		//var mon = $('#v_money').val();
+		   var mon = $.trim($("#txtRechargeMoney").val());
+		   $('#v_money').val(mon);
+		if(mon<50){
+			alert('最少需充值50元。');return;
+		}else if(mon>50000){
+			alert('单笔最多充值50000元。');return;
+		}
+		//$("#myform").submit();
+		alert('抱歉，自动充值升级维护，请找客服线下充值！！！');
+	}else{
+		alert('您必须同意充值协议！');
+	}
+	
+});
+
+$("#ulFastInput").children().click(function (e) {
+    if ($(this).parent().attr("data-type")) {
+        var money = parseInt($(this).text());
+
+        $("#txtRechargeMoney").val(money);
+    } else {
+        $(this).addClass("active").siblings().removeClass("active");
+
+        $("#txtInputMoney").val(parseInt($(this).children("em").text()));
+    }
+
+    $("#divInlineInput").removeClass("show");
+
+    e.stopPropagation();
+});
+
+$("#divInlineInput").click(function (e) {
+    if (e.target.tagName != "INPUT" || $(e.target).attr("readonly"))
+        $(this).addClass("show");
+}).hover(function () {
+    $(this).removeClass("show");
+});
+
+</script>
+#include("/my/MyHot.vm")
+</div>
+</article>
+#include("/foot.vm")
+</body>
+</html>

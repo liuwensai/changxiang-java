@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="changxiang-java"
+  id="myeclipse.1467435655646"
+  context-root="/changxiang-java"
+  j2ee-spec="5.0"
+  archive="changxiang-java.war">
+  <attributes>
+    <attribute name="webrootdir" value="/web" />
+  </attributes>
+</project-module>
+

@@ -1,0 +1,137 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="keywords" content=""/>
+<meta name="description" content=""/>
+<title>我的彩票</title>
+<link rel="stylesheet" href="/css/base.css"/>
+<link rel="stylesheet" href="/css/core.css"/>
+<link rel="stylesheet" href="/css/userCenter/common.css"/>
+<link rel="stylesheet" href="/css/userCenter/myLott.css"/>
+<link rel="stylesheet" href="/css/userCenter/bankLogo.css"/>
+<script src="/js/jquery-1.7.2.min.js"></script>
+<script src="/js/local.js"></script>
+</head>
+<body class="">
+#parse("/head.vm")
+<article class="docBody clearfix">
+    #set($listint=3)
+	#parse("/my/MyList.vm")
+    <div class="rightModule">
+		<ul class="redTab">
+			#if($xbei=='0')<li#if($pay=='xbei') class="active"#end><a href="/my/Rechange.jzh?pay=xbei" target="_self">微信支付</a></li>#end
+			#if($alipay=='0')<li#if($pay=='alipay') class="active"#end><a href="/my/Rechange.jzh?pay=alipay" target="_self">支付宝充值</a></li>#end
+			#if($huichao=='0')<li#if($pay=='huichao') class="active"#end><a href="/my/Rechange.jzh?pay=huichao" target="_self">在线支付</a></li>#end
+			
+<li><a href="/my/Rechange!RechDesc.jzh" target="_self">充值记录</a></li>
+		</ul>
+        <div class="orderDataBox grayBorder">
+				<ul style="padding-bottom:0" class="pay_form">
+					<li style="margin-bottom:0px">
+						<div class="f_left">
+							&nbsp;
+						</div>
+						<div class="f_right" >
+							<div style="line-height:35px;padding-top:0px;">
+                    			<span style="display: inline; width:100%; height:120px; color:black;font-size:14px;font-family: 微软雅黑; ">
+                    				①&nbsp;&nbsp; 支付宝账号： <font color="red">请联系客服索取或扫描支付</font><br />
+                    				②&nbsp;&nbsp; 充值备注填写用户名<br />
+                    				③&nbsp;&nbsp; 支付成功后找【客服QQ：<font color="red">14263926</font>】确认<br />
+                    				④&nbsp;&nbsp; 支付宝充值时间10:00-02:00<br />
+                    				<img src="/images/pay/alipay.png" height="238" width="238" style="border: none; border-style: none;" />
+                    			</span>
+                    		</div>
+						</div>
+					</li>
+  </ul>
+
+<script>
+$('#bankCardSelectHand').click(function(){
+	if($('#selectBankBtn').hasClass('selectBankBtnOpen')){
+		$('#selectBankBtn').attr('class','selectBankBtn');
+		$('#bankCardSelectBox').hide();
+	}else{
+		$('#selectBankBtn').attr('class','selectBankBtnOpen');
+		$('#bankCardSelectBox').show();
+	}
+});
+$('.bankCardList li').click(function(){
+	var cl = $(this).find('span').attr('class');
+	$('#bankCardSelectBank span').attr('class',cl);
+	$('#bankCardSelectHand').click();
+	var bankid = $(this).attr('bankid');
+	$('#v_bank').val(bankid);
+});
+$('#amount').keyup(function(){
+	var m = $(this).val().replace(/\D/g,'');
+	$(this).val(m);
+	$('#v_money').val(m);
+});
+$('#bankCardSumbit').click(function(){
+	if($('#quickPayCheckBox').is(":checked")){
+		var mon = $('#p3_Amt').val();
+		if(mon<50){
+			alert('最少需充值50元。');return;
+		}
+		$("#myform").submit();
+		//openPostWindow('/pay/alipay/alipayapi.jsp', {'WIDtotal_fee' : document.getElementById('p3_Amt').value , 'WIDbody' : encodeURIComponent(document.getElementById('pa_MP').value)}, 'xxpp');
+	}else{
+		alert('您必须同意充值协议！');
+	}
+});
+
+function openPostWindow(url, data, name)  
+{  
+    var tempForm = document.createElement("form");  
+    tempForm.id="tempForm1";  
+    tempForm.method="post";  
+    tempForm.action=url;  
+    tempForm.target=name;
+    
+    for (var key in data) {
+        var hideInput = document.createElement("input");  
+        hideInput.type="hidden";  
+        hideInput.name= key;
+        hideInput.value= data[key];
+        tempForm.appendChild(hideInput);
+    }
+        
+    addEvent(tempForm,"submit",function(){ openWindow(name); });
+    
+    document.body.appendChild(tempForm);
+    
+    if(tempForm.fireEvent){tempForm.fireEvent("onsubmit");}
+    tempForm.submit();
+    
+    document.body.removeChild(tempForm);
+}
+
+function addEvent(element,type,handler){
+    if(element.attachEvent){
+        element.attachEvent("on"+type,handler);
+    }else if(element.addEventListener){
+        element.addEventListener(type,handler,false);
+    }else{
+        alert("注册事件失败，浏览器不支持！");
+    }
+}
+
+function openWindow(name)
+{  
+    window.open('about:blank',name,'height=400, width=400, top=0, left=0, toolbar=yes, menubar=yes, scrollbars=yes, resizable=yes,location=yes, status=yes');   
+}
+
+function delayclick(o){
+    o.disabled=true;
+    setTimeout(function(){o.disabled=false;},1000);
+}
+</script>
+</div>
+#include("/my/MyHot.vm")
+</div>
+</article>
+#include("/foot.vm")
+</body>
+</html>

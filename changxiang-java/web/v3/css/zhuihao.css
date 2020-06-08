@@ -1,0 +1,39 @@
+﻿@charset "utf-8";
+/*================================================
+Version:0.0.1
+Author:LeoCmq # 163.com
+================================================*/
+html,div,body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    margin: 0px;
+    padding: 0px;
+}
+@media screen and (min-width:200px) {html,body,button,input,select,textarea{font-size:7px;}
+}
+@media screen and (min-width:240px) {html,body,button,input,select,textarea{font-size:9px;}
+}
+@media screen and (min-width:320px){html,body,button,input,select,textarea{font-size:12px;}.toudanms{font-size:1.1rem; }
+}
+@media screen and (min-width:380px) {html,body,button,input,select,textarea{font-size:14px;}.toudanms{font-size:1.1rem;}
+}
+@media screen and (min-width:420px) {html,body,button,input,select,textarea{font-size:16px;}.toudanms{font-size:1.2rem;}
+}
+
+@media screen and (min-width:450px) {html,body,button,input,select,textarea{font-size:40px;}.toudanms{font-size:0.9rem;}
+}
+@media screen and (min-width:480px) {html,body,button,input,select,textarea{font-size:16px;}.toudanms{font-size:0.9rem;}
+}
+@media screen and (min-width:540px) {html,body,button,input,select,textarea{font-size:18px;}.toudanms{font-size:0.5rem;}
+}
+@media screen and (min-width:1024px) {html,body,button,input,select,textarea{font-size:18px;}.toudanms{font-size:1.1rem;}
+}
+
+/*头部title*/
+.zhuihaotab{ width:100%;}
+.zlist{width:33.333333%; float:left; text-align:center;line-height:2rem;border-bottom:1px solid #e3e3e3; border-right:1px solid #e3e3e3; box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box; -ms-box-sizing:border-box; }
+.touruplan{ width:100%;}
+.tourumoney{ width:100%;margin-top:.0rem;}
+.touruplan{ height:2.25rem; line-height:2.5rem; color:#9f9f9f; font-size:1.16rem; margin-top:.3rem;}
+.yizhuili{ padding:.8rem 1.33rem; border-bottom:1px solid #e3e3e3; /*display:flex; display:-ms-flex; display:-webkit-flex; display:-moz-flex;display:-o-flex; display:-khtml-flex; flex-flow:row;flex-flow:row; -ms-display:box;*/}
+.pause,.yizhuihao{height:2.5rem; line-height:2.5rem;display:inline-block;}
+.pause{ background-color:#ec4d35; color:#fff; border-radius:0.3rem; width:4rem;text-align:center; /*margin-left:3rem;*/ padding:0 1rem;/* box-sizing:border-box; box-sizing:-webkit-border-box;box-sizing:-moz-border-box;*/}
+.tourumoney{ font-size:1.16rem;}

@@ -1,0 +1,122 @@
+﻿
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>鼎盛网-欢迎您-请登录</title>
+    <link rel="stylesheet" type="text/css" href="20150926_files/login.css?v=20">
+<script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="/js/local.js"></script>
+<script type="text/javascript" src="/js/register.js"></script>
+<style type="text/css">
+	.footer{clear: both;padding:25px 0; position: relative;margin-top: 5.8%;}
+</style>
+<body>
+<div class="header22">
+    <div class="con22">
+        <h1 class="logo" style="margin-top: 1px;"><a href="#"><img alt="Yi Bo net" src="/ad/img/logo_img.png"  style="margin-left: 280px;"></a> </h1>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="banner-show"></div>
+    <div class="container">
+        <div class="login-box">
+    	<div class="fc"></div>
+            <div class="login-slogan"></div>
+            <div class="login-form" id="">
+                    <div class="reg-form" id="js-form-mail">
+                        <div class="cell" style="background: url('/img/login/bole_login_05.png?v=201406241538') no-repeat scroll left center rgba(0, 0, 0, 0);">
+                            <label for="loginname"  >账户</label>
+                            <input type="text" name="loginname" id="loginname" class="text" maxlength="20" style="border: medium none; background: none repeat scroll 0px 0px transparent;"/>
+                        </div>
+                        <div class="cell" style="background: url('/img/login/bole_login_05.png?v=201406241538') no-repeat scroll left center rgba(0, 0, 0, 0);">
+                            <label for="loginpass"  >密码</label>
+                            <input type="password" name="loginpass" id="loginpass" class="text" maxlength="20" style="border: medium none; background: none repeat scroll 0px 0px transparent;"/>
+                        </div>
+                        <div class="cell vcode" style="background: url('/img/login/bole_login_04.png?v=201406241538') no-repeat scroll left center rgba(0, 0, 0, 0);">
+                            <label for="loginyzm"  >输入验证码</label>
+                            <input type="text" name="loginyzm" id="loginyzm" class="text" maxlength="5" onkeydown="if(event.keyCode == 13){$('#submitBtn').click();}" style="border: medium none; background: none repeat scroll 0px 0px transparent;"/>
+                            <img id="js-mail_vcode_img" onclick="this.src='/images/image.jsp?'+Math.random();" src="/images/image.jsp" alt="code"/>
+                        </div>
+						<div class="bottom"><a id="submitBtn" href="javascript:;" class="button btn-green" onclick="Reg.Login();">立即登录</a></div>
+                        <div class="user-agreement" style="padding-top: 40px;">
+                            <input type="checkbox" id="js-mail_chk" checked="true"/>
+                            <label for="js-mail_chk" style="color:#f60">同意<a href="javascript:;" style="color:#f60">《鼎盛用户服务协议》</a></label>
+                        </div> 
+                    </div> 
+            </div>
+            
+              <div class="copy-right" style="margin-top: 200px">
+                <div class="cell">
+                    <a href="javascript:;" rel="nofollow" style="color:#f60;font-size:10px">鼎盛©2019 www.ds2018.cn</a> 
+                    <a href="javascript:;" style="color:#f60">桂ICP备08102407号-1</a>
+                    <a href="javascript:;" style="color:#f60">工商营业执照</a>
+                </div>				
+                <div class="cell">
+                                    
+				</div>				
+            </div>
+            
+        </div>
+    </div>
+<!--     <div class="footer">
+        <div class="con">
+            <div class="copy-right">
+                <div class="cell">
+                    <a href="javascript:;" rel="nofollow" style="color:#f60">鼎盛© 2017 www.yf2017.cc</a> 
+                    <a href="javascript:;" style="color:#f60">桂ICP备08102407号-1</a>
+                    <a href="javascript:;" style="color:#f60">工商营业执照</a>
+                </div>
+				
+                <div class="cell">
+                        <a href="javascript:;" rel="nofollow">广东</a> &#8226;
+                        <a href="javascript:;" rel="nofollow">东莞</a> &#8226;
+                        <a href="javascript:;" rel="nofollow">松山湖</a>&#8226;　
+                        <a href="javascript:;" rel="nofollow">梅州</a> &#8226;
+                        <a href="javascript:;" rel="nofollow">兴宁</a>
+                        <a href="javascript:;">关于鼎盛</a> &#8226;
+                        <a href="javascript:;">诚征英才</a> &#8226;
+                        <a href="javascript:;">企业文化</a>              
+				</div>
+				
+                <div class="cell">
+                    <a href="javascript:;" rel="nofollow" style="color:#f60">新的一天，我们从微笑开始！ — 鼎盛</a>
+                
+                </div>
+            </div>
+        </div>
+    </div> -->
+</div>
+
+</body>
+<script>
+$(function(){
+	$('div.reg-form input.text').focus(function(){
+		$(this).prev().hide();
+	}).blur(function(){
+		var t = $(this).val();
+		if(t==''){
+			$(this).prev().show();
+		}
+	});
+});
+//JS部分
+function bgRoll(){
+    //变量 j 控制图片数量，此例中为 3 张背景轮流更换，名称分别bt1.jpg、bt2.jpg、bt3.jpg。
+    //变量 time 控制切换时间，此例中为每经过 5000毫秒 更换一次图片 （1000毫秒为1秒）
+    var i=2;
+    var j=3;
+    var time=5000;
+    setInterval(function(){
+        document.getElementsByClassName("wrapper").item(0).style.backgroundImage="url(20150926_files/img/banner-111"+i+".png)";
+        if(i<j){
+            i++;
+        }else{
+            i=1;
+        }
+    },time)
+}
+window.onload=function(){
+    bgRoll();
+}
+</script>
+</html>

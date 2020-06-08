@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+/* 方案详情 */
+.u-cz_info{height: 4.25rem;}
+.u-cz_info .logo{padding-right: .91rem; height: 2.58rem; width: 2.58rem; background-size: auto 2.5rem;}
+.u-cz_info .logo img{ width:2.58rem; height:2.58rem;}
+.u-cz_info h2 , .casexq-top h2{color: #333; font-size: 1.5rem; font-weight: 700; margin-right: 1rem;}
+.u-cz_info .i-guide{background-position: left center; padding-left: 1.5rem;  display:block; line-height: 2rem;}
+.m-plan_basic_info{ background-color: #fff; border-bottom: #c8c8c8 solid 1px;}
+.u-cz_info{border-bottom: #e5e5e5 solid 1px;}
+.u-plan_status{height: 6.04rem;}
+.u-plan_status strong{display: block; font-size: 1.58rem; line-height: 2.8rem;}
+.u-plan_status strong.fz_14{font-size: 1.16rem;}
+.u-plan_status .f14{font-size: 1.16rem;font-weight: 300;}
+.u-plan_status li{text-align: center; }
+.m-plan_detail_info ul{display: table;}
+.m-plan_detail_info li{font-size: 1.16rem; display: table-row;  line-height: 1.6rem;}
+.m-plan_detail_info .basic_ul .td{display: table-cell; /*vertical-align: middle;*/ padding: 0.20rem 0 ;}
+.m-plan_detail_info .nowrap{/*vertical-align: top;*/}
+.m-plan_detail_info .basic_ul .td em{ min-width:1rem; display:inline-block; margin-right:0.5rem;}
+.m-plan_detail_info .result{height: 2.26rem; line-height: 2.66rem;}
+.m-plan_detail_info .nb{font-weight: 300;}
+.footer .tips{height:4.91rem; padding: 0 .5rem; line-height: 1.58rem; font-size: 1rem;}
+.p-plan_detail.fullscreen{ padding-bottom: 14.91rem;}
+.p-plan_detail_jc.fullscreen{ padding-bottom: 6.59rem;}
+.p-plan_detail + .footer{margin-top: -14.48rem; position: relative; z-index: 5;}
+.p-plan_detail_jc + .footer{margin-top: -5.59rem; position: relative; z-index: 5;}
+
+.p-plan_detail .i-blueball_s,.p-plan_detail .i-redball_s{margin-right: .25rem;}
+.confirm p{ line-height:1.6rem !important;}
+.jc-order_info{display: table; width: 100%;border: #d8d7d7 solid 1px; box-sizing: border-box; border-collapse: collapse; text-align: center;}
+.jc-order_info li{display: table-row;}
+.jc-order_info .td{display: table-cell; border-bottom: #d8d7d7 solid 1px; vertical-align: middle; font-size: 1rem; }
+.jc-order_info .th .td{ height: 2.375rem; background-color: #f4f4f4; color: #9f9f9f; font-size:1rem;}
+.jc-order_info .tr .td{padding: .79rem .3rem; width: auto; background-position: left center; background-repeat: no-repeat;background-size: 1px .75rem;}
+
+.order_table{ border-collapse:collapse; width:100%;}
+.order_table th{height: 2.375rem; background-color: #f4f4f4; color: #9f9f9f; font-size:1rem; border:1px solid #d8d7d7; text-align:center;}
+.order_table td{ border:1px solid #d8d7d7; text-align:center; font-size:1rem; padding:0.79rem 0.4rem; line-height:20px;}
+.order_table tr td p{ line-height:25px;}
+
+
+.dlt-bg-icon{ background:url(../images/logo/1.png) no-repeat;background-size:auto 2.58rem; }
+.jczq-bg-icon{ background:url(../images/logo/8.png) no-repeat; background-size:auto 2.58rem;}
+.select-bg-icon{ background:url(../images/logo/3.png) no-repeat; background-size:auto 2.58rem;}
+.jclq-bg-icon{ background:url(../images/logo/4.png) no-repeat; background-size:auto 2.58rem;}
+.pl3-bg-icon{ background:url(../images/logo/5.png) no-repeat; background-size:auto 2.58rem;}
+.pl5-bg-icon{ background:url(../images/logo/6.png) no-repeat; background-size:auto 2.58rem;}
+.qxc-bg-icon{ background:url(../images/logo/7.png) no-repeat; background-size:auto 2.58rem;}
+.ctzq-bg-icon{ background:url(../images/logo/2.png) no-repeat; background-size:auto 2.58rem;}
+
+/*.jczq-orderdan{ display:inline-table; position:relative; top:0; right:0; height:1.875rem; width:1.875rem; border-radius:0 0 0 1.875rem; background-color:#ec4535; color:#fff; text-indent:1.16rem;}*/
+.jczq-orderdan{ background:url(../images/traditionalfoot/01.jpg) no-repeat right top;/* background-size:2rem 1.5rem;*/}
+.order_list li{ padding: 1rem 1.33rem; border-bottom: #e1e1e1 solid 1px;}
+.order_list .i-arrowR{display: block; height: auto;}
+.order_list .cz{font-size: 1.33rem; color:#333; font-weight:700 ;}
+
+
+
+
+.yizhuihao{border:1px solid #e3e3e3; padding:0 0 0 0rem; /*width:14rem; margin-left:1rem;*/ color:#333; float:left; background-color:#red;/* flex:2;*/ }
+.yizhuihao div{ height:2.5rem; line-height:2.5rem;background-color:#cbebff;}
+.yizhuihao div span{position:absolute; text-align:center; padding-left:4rem;}
+.action{/*display:inline-block; float:right; margin-right:1rem; */}
+.action2{/*display:inline-block; float:right; margin-right:3rem; */line-height:2.5rem; text-align:center; color:#333; flex:1;}
+.order_list i[class^="logo-"]{height:auto; display: block; min-height: 2.58rem; width: 2.75rem; background-size: auto 2.58rem;}
+.order_list .status{font-size: 1.16rem;}
+.order_list .status.red{font-weight: 700;}
+.order_list .cost{color: #9f9f9f; margin-top: .05rem;}
+.order_list .sta_cos{ margin-right: 1.125rem;text-align: right;}
+.order_list .sosbox{ background:#ec4535;  border-radius:0.23rem; font-size:1rem; color:#fff; padding:0.16rem 0.6rem; margin-left:0.5rem; display:inline-block }
+.csname,.cost,.fontzhuhao{ font-size:1.rem;}
+
+
+.guizealert{width:100%; height:18rem; overflow:scroll;}
+.m-dialog_submit a{display: block;}
+.g-dialog_body.lotto_rule{padding: .833rem 1.41rem;}
+.lotto_rule .tit{ line-height: 2.58rem; font-size: 1.33rem; font-weight: 700;}
+.lotto_rule .des{line-height: 1.54rem; margin-top: .2rem;}
+.lotto_rule .rule_tbl{display: table; margin: 1rem 0; border: #d8d7d7 solid 1px; border-collapse: collapse; width: 100%; box-sizing: border-box;}
+.lotto_rule .rule_tbl .th,.lotto_rule .rule_tbl .td{ display: table-cell; border-bottom: #d8d7d7 solid 1px; vertical-align: middle; text-align: center; /*white-space: nowrap;*/}
+.lotto_rule .rule_tbl .th{height: 2.41rem; background-color: #f4f4f4; color: #9f9f9f;}
+.lotto_rule .rule_tbl .tr{display: table-row;}
+.lotto_rule .rule_tbl .td{ padding: 1rem .1rem; line-height: 1.125rem;}
+.lotto_rule .rule_tbl .balls{font-size:0; padding:  0; display: block; vertical-align: middle;}
+.lotto_rule .rule_tbl .balls i{margin-right: 0.08rem;}
+.lotto_rule .rule_tbl .balls i:last-child{margin-right: 0;}
+.lotto_rule .rule_tbl .th.spline{ width: auto; font-size: 1rem; background-repeat: no-repeat; background-size: 1px .875rem; background-position: right center;}
+
+.i-redball_mini,.i-blueball_mini,.i-greyball_mini{ border-radius: 50%; width:.875rem; height: .875rem; display: inline-block; }
+.i-redball_mini{background-color: #eb3026;}
+.i-blueball_mini{background-color: #438ed3;}
+.i-greyball_mini{background-color: #ccc;}
+
+.i-arrowD{height:1rem; width:1rem; display:inline-block}
+.i-arrowD.fold{transform:rotate(180deg);-webkit-transform:rotate(180deg);}
+
+.p-account_orderlist .footer{ position: relative; z-index: 5; height:1.66rem; padding:1.23rem 0;  }
+.p-account_orderlist .footer .footerbox{ position:fixed; border-top:1px solid #e7e7e8; line-height:1.66rem; height:1.66rem; text-align:center; font-size:1.16rem;  background:#fff; bottom:0; width:100%; padding:1.23rem 0; color:#ec4d35;}
+.p-account_orderlist .footer .login_q{ width:1.33rem; ling-height:1.33rem; margin-right:0.5rem;  background-size:1.33rem;  height:1.33rem;  }
+.p-11x5_chooseBall .m-tabs li{ display: inline-block;}
+
+
+/*竞彩足球单关*/

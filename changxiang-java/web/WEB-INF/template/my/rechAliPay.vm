@@ -1,0 +1,122 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="keywords" content=""/>
+<meta name="description" content=""/>
+<title>我的彩票</title>
+<link rel="stylesheet" href="/css/base.css"/>
+<link rel="stylesheet" href="/css/core.css"/>
+<link rel="stylesheet" href="/css/userCenter/common.css"/>
+<link rel="stylesheet" href="/css/userCenter/myLott.css"/>
+<link rel="stylesheet" href="/css/userCenter/bankLogo.css"/>
+<script src="/js/jquery-1.7.2.min.js"></script>
+<script src="/js/local.js"></script>
+ <script src="/js/jquery/jquery.qrcode.min.js" type="text/javascript"></script>
+  <script src="/js/layer/layer.js" type="text/javascript"></script>
+</head>
+<body class="">
+#parse("/head.vm")
+<article class="docBody clearfix">
+    #set($listint=3)
+	#parse("/my/MyList.vm")
+    <div class="rightModule">
+		<ul class="redTab">
+			#if($xbei=='0')<li#if($pay=='xbei') class="active"#end><a href="/my/Rechange.jzh?pay=xbei" target="_self">微信</a></li>#end
+			<li#if($pay=='chinabank') class="active"#end><a href="/my/Rechange.jzh?pay=chinabank" target="_self">支付宝</a></li>
+			#if($alipay=='0')<li#if($pay=='alipay') class="active"#end><a href="/my/Rechange.jzh?pay=alipay" target="_self">qq支付</a></li>#end
+		
+			#if($huichao=='0')<li#if($pay=='yeepay') class="active"#end><a href="/my/Rechange.jzh?pay=yeepay" target="_self">网银</a></li>#end
+			 <!--<li#if($pay=='huichao') class="active"#end><a href="/my/Rechange.jzh?pay=huichao" target="_self">网银②</a></li>-->
+			<li><a href="/my/Rechange!RechDesc.jzh" target="_self">充值记录</a></li>
+		</ul>
+      <div class="orderDataBox grayBorder">
+		<ul style="padding-bottom:0" class="pay_form">
+	    <span id="payOnlineForm1box" style="display: block;">
+		<li>
+           <p style="color:#F00;margin-left:103px;">qq在线扫码支付，即时到账，充值免收手续费，最小充值金额50元</p>                                              
+		</li>	
+	  </span>
+    <li id="goPayOnlineBtnBox" class="btnLi" style="display: block;">
+      <div class="f_left">&nbsp;</div>
+      <div class="f_right"> 
+	    <span class="btn1Box">
+        <button class="btn1" type="button" id="bankCardSumbit">点我，去充值</button>
+        </span>   
+       
+	  </div>
+    </li>
+  </ul>
+<form action="/pay/newzhifu/paysubmitqq.jsp" method="post" id="myform" target="_blank">
+	<input type="hidden" name="pa_MP" id="pa_MP" value="$!user.user_id"/>
+	<input type="hidden" name="p3_Amt" id="p3_Amt" value=""/>
+	<input type="hidden" name="pd_FrpId" id="v_bank" value=""/>
+</form>
+<script>
+$('#amount').keyup(function(){
+	var m = $(this).val().replace(/\D/g,'');
+	$(this).val(m);
+	$('#p3_Amt').val(m);
+});
+$('#bankCardSumbit').click(function(){
+		var userId=$('#pa_MP').val();
+		//window.open("http://mypay.520babe.com/pay.php?uid="+userId+"&Rech_type=2")
+		alert("充值通道暂时关闭。");
+		
+});
+
+function openPostWindow(url, data, name)  
+{  
+    var tempForm = document.createElement("form");  
+    tempForm.id="tempForm1";  
+    tempForm.method="post";  
+    tempForm.action=url;  
+    tempForm.target=name;
+    
+    for (var key in data) {
+        var hideInput = document.createElement("input");  
+        hideInput.type="hidden";  
+        hideInput.name= key;
+        hideInput.value= data[key];
+        tempForm.appendChild(hideInput);
+    }
+        
+    addEvent(tempForm,"submit",function(){ openWindow(name); });
+    
+    document.body.appendChild(tempForm);
+    
+    if(tempForm.fireEvent){tempForm.fireEvent("onsubmit");}
+    tempForm.submit();
+    
+    document.body.removeChild(tempForm);
+}
+
+function addEvent(element,type,handler){
+    if(element.attachEvent){
+        element.attachEvent("on"+type,handler);
+    }else if(element.addEventListener){
+        element.addEventListener(type,handler,false);
+    }else{
+        alert("注册事件失败，浏览器不支持！");
+    }
+}
+
+function openWindow(name)
+{  
+    window.open('about:blank',name,'height=400, width=400, top=0, left=0, toolbar=yes, menubar=yes, scrollbars=yes, resizable=yes,location=yes, status=yes');   
+}
+
+function delayclick(o){
+    o.disabled=true;
+    setTimeout(function(){o.disabled=false;},1000);
+}
+</script>
+</div>
+#include("/my/MyHot.vm")
+</div>
+</article>
+#include("/foot.vm")
+<div id="img-ewm" class="img-ewm"></div>
+</body>
+</html>

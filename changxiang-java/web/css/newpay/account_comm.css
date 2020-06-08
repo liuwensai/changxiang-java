@@ -1,0 +1,227 @@
+﻿.list-table > p{
+    height:30px;
+    border-bottom:1px solid #ccc;
+    background:linear-gradient(top, #fdfdfd, #eeecec);
+    background:-webkit-linear-gradient(top, #fdfdfd, #eeecec);
+    background:-moz-linear-gradient(top, #fdfdfd, #eeecec);
+    background:-ms-linear-gradient(top, #fdfdfd, #eeecec);
+    background:-o-linear-gradient(top, #fdfdfd, #eeecec);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd',endColorstr='#eeecec',grandientType=1);
+    font-size:14px;
+    font-style:normal;
+    font-weight:bold;
+    line-height:30px;
+    text-indent:10px;
+}
+.list-table table, .filter-table table{
+    width:100%;
+}
+.filter-table table{
+    border-bottom:1px dotted #ccc;
+}
+.filter-table .paging-container{
+    border-top:1px dotted #ccc;
+    padding:15px 0 16px;
+}
+.list-table td, .list-table th, .filter-table th, .filter-table td{
+    height:30px;
+    text-align:center;
+    border-bottom:1px solid #ebedec;
+}
+.list-table tr:last-child td{
+    border-bottom:0;
+}
+.list-table th, .filter-table th{
+    background:#f3f2f2;
+}
+.list-table td, .filter-table td{
+    line-height:20px;
+    padding:10px 0;
+    height:auto;
+}
+.list-table .number-cell, .filter-table .number-cell{
+    width:34px;
+    padding:0;
+    text-align:center;
+}
+.list-table .list-empty{
+    padding:126px;
+    text-align:center;
+}
+.filter-table .list-empty{
+    padding:150px;
+    text-align:center;
+}
+.filter-head{
+    height:38px;
+    line-height:38px;
+    padding:0 15px;
+}
+.filter-head em{
+    font-weight:bold;
+    font-size:15px;
+}
+.filter-content{
+    height:23px;
+    background:#f7f7f7;
+    border-bottom:1px solid #ccc;
+    padding:4px 0 3px 0;
+    overflow:hidden;
+    line-height:23px;
+}
+.filter-content select, .filter-content button{
+    height:21px;
+    margin-top:1px;
+}
+.filter-content button{
+    height:21px;
+    padding:0 10px;
+    text-indent:2px;
+    line-height:17px;
+}
+.account-tab .tab-head ul, .account-tab .tab-head, .account-tab .tab-head li{
+    height:33px;
+    line-height:33px;
+    line-height:37px\9;
+    margin:0;
+}
+.account-tab .tab-head li a{
+    border:0;
+    padding:0;
+}
+.account-tab .tab-head{
+    border-bottom:3px solid #ba2636;
+    background:#fff;
+}
+.account-tab .tab-head li{
+    border-right:1px solid #ccc;
+    padding:0 20px;
+}
+.account-tab .tab-head li.active{
+    background:#ba2636;
+    color:#fff;
+}
+.account-tab .tab-content{
+    padding:20px;
+    min-height:424px;
+}
+.account-tab .tab-content.p10{
+    padding:10px;
+    min-height:444px;
+}
+.set-prompt{
+    background:#fffcd0;
+    border:1px solid #f9d8a3;
+    font-size:12px;
+    padding:5px;
+    padding:7px 5px 3px\9;
+    margin-bottom:50px;
+}
+.edit-row, .head-row{
+    height:31px;
+    margin-bottom:15px;
+}
+.edit-row i{
+    font-size:14px;
+    color:#000;
+    line-height:31px;
+}
+.edit-row input, .textarea-row textarea{
+    height:66px;
+    width:220px;
+    resize:none;
+}
+.edit-row input{
+    line-height:27px\9;
+    height:27px;
+}
+.edit-row input.short{
+    width:120px;
+}
+.edit-row select{
+    height:31px;
+}
+.edit-row > span, .head-row > span, .textarea-row > span{
+    width:220px;
+    font-size:14px;
+    text-align:right;
+    padding-right:15px;
+    line-height:31px;
+    line-height:33px\9;
+    color:#666;
+}
+.head-row > div{
+    width:80px;
+    height:80px;
+    position:relative;
+}
+.add-btn{
+    height:29px;
+    width:29px;
+    position:relative;
+    border:1px #ccc dashed;
+    cursor:pointer;
+}
+.add-btn i, .add-btn b{
+    position:absolute;
+    width:3px;
+    height:19px;
+    background:#aaa;
+    position:absolute;
+    left:13px;
+    top:5px;
+}
+.add-btn:hover{
+    border-color:#ba2636;
+}
+.add-btn:hover i, .add-btn:hover b{
+    background:#ba2636;
+}
+.add-btn b{
+    height:3px;
+    width:19px;
+    left:5px;
+    top:13px;
+}
+.head-row iframe{
+    position:absolute;
+    width:100%;
+    height:100%;
+    text-align:center;
+    line-height:80px;
+    cursor:pointer;
+}
+.head-row > span, .textarea-row > span{
+    line-height:150%;
+}
+.textarea-row{
+    height:70px;
+}
+.head-row{
+    height:80px;
+}
+.account-tab .button-row{
+    padding-left:235px;
+}
+.account-tab .button-row .btn-red{
+    width:60px;
+    display:inline-block;
+    height:27px;
+    line-height:27px;
+    font-size:14px;
+    padding:0 10px;
+}
+.precautions{
+    border-top:1px dashed #ddd;
+}
+.precautions p{
+    font-weight:bold;
+    padding-bottom:5px;
+}
+.precautions ol{
+    list-style:decimal;
+    padding-left:15px;
+}
+.precautions li{
+    padding-top:5px;
+}

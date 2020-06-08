@@ -1,0 +1,128 @@
+@charset "utf-8";
+/*================================================
+Version:0.0.1
+Author:LeoCmq
+================================================*/
+/* 账户 */
+.personal_info{padding: 1.125rem .15rem; border-bottom: #ebecec solid 1px;}
+.personal_info .username{ line-height: 2.29rem; font-size: 1.5rem; color:#333;  font-weight: 700;}
+.personal_info .cash{font-size: 1.16rem;}
+.personal_info .cash strong{font-size: 1.33rem;}
+
+.finance_btns{ height: 5.33rem; border-bottom: #c8c8c8 solid 1px;}
+.finance_btns a{text-align: center;font-size: 1.16rem;width: auto;}
+.finance_btns a.spline{  background-position: right center; background-repeat: no-repeat; background-size: 1px 1.33rem; display: -webkit-box;}
+
+.acc_menu a{ padding: 0 1.33rem 0 1.5rem; height: 3.625rem; border-bottom: #e1e1e1 solid 1px; color:#333;font-size: 1.33rem;}
+.acc_menu i{margin-right: 1.125rem; width: 1.5rem; background-position: center center; height: 100%; }
+.acc_menu .i-arrowR{margin-right: 0;width: 1rem; }
+/* 账户详情 */
+.finance_sum{/*height: 8.2rem;*/ height:10.25rem; color: #787d85; border-bottom: #d2d2d2 solid 1px;width: 100%;}
+.finance_sum .froze{width: 37%;}
+.finance_sum .spline{height: 100%; background-repeat: no-repeat; background-size: 1px 6.2rem;}
+
+.finance_tab { border-bottom: #c8c8c8 solid 1px; width: 100%;}
+.finance_tab li{line-height: 3.75rem; text-align: center; color: #9f9f9f;font-size: 1.16rem; padding: 2px 0; margin-bottom: -1px; position: relative;}
+.finance_tab li.on{ padding-bottom: 0; border-bottom: #afafaf solid 2px; color: #333;}
+
+.finance_list{width: 100%; /*overflow: hidden;*/}
+.finance_list li{padding: 0 1.33rem;  height: 4.54rem;color: #adadad;}
+.finance_list .type{font-size: 1.16rem; color: #333; padding-bottom: .2rem;}
+.finance_list .time{font-size: 1rem;}
+.finance_list .num{display: block; font-size: 1.33rem; font-weight: 700;padding-bottom: .2rem;}
+
+.p-account_finance{height: 100%;}
+
+.slide4more{text-align: center; color: #adadad; line-height: 3rem; height: 3rem;position: relative;z-index:5;}
+.slide4more .i-slideUp{ height: 100%;}
+
+/*账户明细头部*/
+.topmoy{border-bottom:1px solid #ddd; padding:1.75rem 0; height:1.625rem; line-height:1.625rem; }
+.topmoy h3{font-size: 1.16rem;}
+.topmoy strong{font-size: 2.5rem;}
+.topmoy .fz_16{ font-size:1.33rem;}
+.top_tab{padding:1.25rem 0; height:2.66rem; line-height:1.33rem;}
+.top_tab .i-guide{ background-position: left center; padding-left: 1.41rem; line-height: 1.41rem; height: 1.41rem;}
+.top_tab strong{display: block; line-height: 1.41rem;font-size: 1.16rem; color:#eb3026;}
+.total strong{ font-size:2.5rem;}
+.total h3{ font-size:1.16rem;}
+.ta_c{ text-align:center;}
+.froze .i-guide{padding-left:1.41rem; background-position:left center; line-height:1.41rem; height:1.41rem;}
+
+
+/* 消息设置 */
+.msg_setting dt{ padding: 1.33rem; border-bottom: #c8c8c8 solid 1px;}
+.msg_setting dt:first-child{margin-top: 0;}
+.msg_setting h3{ font-size: 1.16rem; line-height: 1.66rem;}
+.msg_setting dd{background-color: #fff; line-height: 1.625rem; font-size: 1.16rem; color: #333; padding: 1.33rem; border-bottom: #e5e5e5 solid 1px;}
+.switch_box{display: block; height: 1.625rem;}
+.switch_box .chkbox{-webkit-transition:background-color .2s; display: inline-block; position: relative; width: 4.54rem; height: 1.625rem; border-radius: .8125rem; background-color: #e2e2e2; box-sizing: border-box; padding: 1px;}
+.switch_box .chkbox:after{content: ' ';  display: block; height: 100%; width: 2.2rem; border-radius: 1.41rem; background-color: #fff;
+-webkit-transition-timing-function: cubic-bezier(.54,1.85,.5,1);
+-webkit-transition-duration: .2s;
+-webkit-transition-property: all;
+pointer-events: none;
+}
+.switch_box .chkbox:before{content: 'OFF'; color: #fff;font-size: .83rem; position: absolute; right: .375rem;line-height: 1.5rem;}
+.switch_box .chkbox.checked:after{-webkit-transform: translate(2.225rem,0);transform: translate(2.225rem,0);}
+.switch_box .chkbox.checked{background-color: #6fc74c;}
+.switch_box .chkbox.checked:before{right: auto; left:.375rem; content: 'ON';}
+
+.profile_former{border: #ececec solid 1px; background-color: #fff; border-style: solid none; margin-top: 1.625rem;}
+.profile_former .itm{ padding: 0 1.33rem; border-bottom: #ebecec solid 1px;}
+.profile_former .itm:last-child{border-bottom: none;}
+.profile_former .itm label{ min-height: 3.66rem;}
+.profile_former .itm .tit{min-width: 6.125rem;font-size: 1.16rem;line-height: 3.66rem;}
+.profile_former .itm .ipt{ line-height: 1.66rem; height: 1.66rem; margin-top: 1rem; border: none; font-size: 1.33rem; color:#333;}
+.profile_former .itm .ipt::-webkit-input-placeholder{font-size: 1rem; color:#9f9f9f;}
+.profile_former .itm .ipt.red::-webkit-input-placeholder{ color:#eb3026;}
+.profile_former .itm .err{position: relative; z-index: 5; line-height: 1.5rem; padding-left: 1.33rem; background-size: 1rem 1rem;}
+.profile_former .itm .verify_btn .btn_white{line-height: 2.83rem; height:2.83rem; padding:0 1.33rem; font-size:1rem;}
+.profile_former .itm .i-arrowR{ height: auto; display: block;}
+.profile_former .itm .subtext{line-height: 3.66rem; width: 2.66rem;  }
+
+/*绑定银行卡*/
+.profile_former .itm .select{ line-height:3.66rem; font-size:1.33rem; color:#333;}
+.profile_former .itm .select.off{ color:#9f9f9f;font-size:1rem;}
+.profile_former .i-arrowD{ width:1rem; height:1rem; position:relative; right:1rem; display:inline-block; float:right; top:1.23rem;}
+.boxselect{ max-height:23rem; overflow:auto; margin-bottom:1rem; display:block;}
+.boxselect li{ line-height:1.5rem; border-bottom:1px solid #ebecec; font-size:1.33rem; color:#666; padding:0.83rem 0; list-style:none}
+.boxselect li .yuan{ width:1rem; height:1rem; border-radius:1rem; background:#eee; margin-right:0.5rem; display:inline-block;}
+.boxselect li .yuan.on{ background:#e73939;}
+.profile_former .slebox{ border:none; background-color: transparent; color:#9f9f9f}
+.profile_former .slebox.on{ font-size:1.33rem; color:#333;}
+
+/*意见反馈*/
+.feedback_textbox{ border-bottom:1px solid #c8c8c8; border-top:1px solid #c8c8c8;}
+.feedback_text{resize:none; padding: 1.33rem; box-sizing: border-box; background-color: #fff; border: none; width: 100%; min-height: 15.5rem; font-size: 1.16rem;}
+.ft_txt{border-top: #ccc solid 1px; padding: 1.33rem; line-height: 1.58rem;}
+.profile_former.topborder{ margin-top:0.83rem;}
+.feedback_for{ min-height:4.18rem; position:relative; font-size:1.16rem; color:#333; z-index:1; margin-bottom:0.83rem; border-bottom:1px solid #c8c8c8; background:#fff;}
+.feedback_for .fortitle{ height:4.18rem; line-height:4.18rem;}
+.feedback_for .forui{ position:absolute; z-index:2; top:4.18rem; margin-top:1px; width:100%;}
+.feedback_for .forui li{ line-height:4.18rem; height:4.18rem; border-bottom:1px solid #ddd; display:block; background:#fff; padding:0 1.33rem;}
+.feedback_for .fortitle .i-arrowD{ height:100%;}
+.feedback_for .fortitle .i-arrowD.fold{transform:rotate(180deg);-webkit-transform:rotate(180deg); }
+.feed_topbtn{ padding:0.5rem 1.33rem; border-bottom:1px solid #ddd;}
+
+.feed_deattop{ height:1.25rem; line-height:1.25rem; padding:1.25rem 1.33rem;}
+.feed_deattop .righttxt{ border-left:1px solid #ddd; text-align:right;}
+.feed_deatbox{ background:#fff; border:1px solid #c8c8c8; border-style:solid none solid none; padding:1.66rem 1.33rem;}
+.feed_deatinfo.cust{ border-top:1px solid #ddd; padding-top:1.33rem; margin-top:1.33rem;}
+.feed_deatinfo h3{ line-height:2rem; height:2rem;}
+.feed_deatinfo h3 .fontright{ text-align:right;}
+
+.p-account_finance .footer{ position: relative; z-index: 5; height:1.66rem; padding:1.23rem 0;  }
+.p-account_finance .footer .footerbox{ position:fixed; border-top:1px solid #e7e7e8; line-height:1.66rem; height:1.66rem; text-align:center; font-size:1.16rem;  background:#fff; bottom:0; width:100%; padding:1.23rem 0; color:#ec4d35;}
+.p-account_finance .footer .login_q{ width:1.33rem; ling-height:1.33rem; margin-right:0.5rem;  background-size:1.33rem auto;  height:1.33rem;  }
+
+
+.i-prepay{height: 1.91rem; width: 2.6rem; background-size: auto 1.91rem; background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAAuCAYAAABwF6rfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHUSURBVGhD7ZrRbYMwFEWpOkXXgUidoN2kI/SvIGWMZoDuUSN1hDBDvyjX2Mm7qV1VkW2UB0d6HxdsPx0gEUpceXZvn03d9u91a45N14+aCk5wg6PTnWna/iU0QWVNrlYaVyE4QHHZO49H4HSw7T8eu68He0UUASe4eU84T+Lnz7RGaY+VP4mbY+UDyo1RC7lSUA65UlAOuVJQDrlSUA65UlAOuVJQDrlSyMCuM8+op8Ph3h2KgjF+vDuUFHKlkBgI+LXxtvSXPM7Jt8gc8n5tVDFxVEz+Uhp10+Kg7vq97HEpH5LGHHc6KbJHdvFqHO9i8lHpaY6bnRTZJ784iMiXlAayVxlxEJCXlVsayH7lxEFEvoQ0kD3LioNJUPa0fQtIA+pJITFNa17rznzLHv8pO2ea65ZJhuyRVfwaaV+Y65ZJhlx/u+M2FEL2XKrvJm5DIWTPpfpmFd++1a8ozHXLJEOuv91xGwohey7VdxO3oRCy51J9FxHnzQdmcIezQ64UCjH/J28GXIBfuxQyQq4UlEOuFJRDrhSUQ64UlEOuFJRDrhSUQ65r3Pxj3x3oR/01bfda7QY/gG2OoQEqy2/p9OAqzI+9GYITbrjwPQa38+txVf0AwFRV0fmBO9UAAAAASUVORK5CYII=");}
+.i-cashout{height: 1.91rem; width: 2.6rem; background-size: auto 1.91rem; background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADsAAAAuCAYAAACWPmGbAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKjSURBVGhD5ZpBaxNBFMfjt/ED+AVMQA/ePeh38GbPevCkGxDBQ1E8KoGC4K0g9qAeRTfWVlBUUEKgVSyllAYyzn/fG/Pf7USqaV4z4w8e2e7b3Zlf3yS7s7utGO2if7bdLV91un230FH0DzpFeUO7/Xecu1Webhfls+iBFzbKHe3+0UE1sWP8gAsa/1JZVLQm6g9y+f7mw9V33+8559bG4/E2Ass+rvnlM7prYjh3yg/d50HUf1e/vR/uXfVC614sCnLYRo+QDjJ8taI+rj/5MtofjVXLuQcvh+787be/84scKJT/7MFJ9er4DZbDxheXN92nrX3VFFIRbUa7219SxQn636g2uLn6VRUnpFTZZhyqMCebVU2N7d2RW1r5zMI91RQoobukDYSDD0atagq5yQJ2Uk2BE7nATqopcCIX2Ek1BU7kAjuppsCJXGAn1RQ4kQvspJoCJ3KBnVRT4IQlTzd+uCuPPtY6No+oJjnFm0snJovJBrdrEhDmFRbcXRvUO2EUqLCp7IsPP2sdwCRj3nB7prKYQoa2YjOsecB+ZrL4QQrtQJpvEMwT9jOT5R+lx69xO+sww52Daop24c569Ym/Z4X9zGR5CGMaFqMxF61OTbPCxzOT5bsd04YwKsr9wT6zwsczk+ULiI3Bnq6tk01l+fyK5RjZfGdRzdAOZI5D5Ciwn5ks4KGMylnAfqayXF3EtOF8nHB7prIA51hu0yrMr40DuFTkdk3iJGY9gf9mPjtv2KmSDHAiF9hJNQVO5AI7qabAiVxgJ9UUOJEL7KSaAidygZ1UU+BELrCTagr85H3apDol+Plsp1sOVFPwK3shiYvzlIXDFHEi23jy3nxbJqeIvjWDN0tiG6cc0bdlAlphP6TLQXPHVOLP70G1Wr8Adf8qpg/baxYAAAAASUVORK5CYII=");}
+.i-log{height: 1.125rem; width: 1.5rem; background-size: 1.45rem auto; background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAbCAYAAAD28DaZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADhSURBVEhL7ZdRCsMgDIZ7mj2uJ9wu4RH2HMU77GAzYGTTJbNNFxH6ww/VxPhh09Iukrz39xDCLQ9VUtdKix/oPFSpq1aM8ZqSHCVXfmZ/i221VMshBxJzIGgrGLQrx5fu6SUfVhHF8lAlrhbuW2JcEkqKbVXXPlISPgHoPFRJqtUFY6UThtMcMNhkNLfDu173tP5QmL1PHq1vYEZoDhhlz3AWe4nyTGB+9RLlNTAjNAfMn3qm9kcP0fwQmLqHaL6BGaEThlMDk+5j8w1sIdz3HUb6O7C0WwBgxYsqYG0HAOsLPFXsTqtOjxUAAAAASUVORK5CYII=");}
+.i-detail{ height: 1.33rem; width: 1.16rem; background-size: auto 1.33rem;  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAgCAYAAAABtRhCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADcSURBVEhL7ZdRDoMgDIY9j8fZfbZLcIS9Q484TFpTsFToasIDX9Jkwg+f2m3RDQD2lFLI9fWoGONr08ghNxmVKqXQcaU4NAwX8c84XUIBPDTB97iV8rCVeg9VWoctSHs0pVJ4lNYeolQK58kPjVf1xkgBzeNhwUUqhVvCYxwjBTTf+qZzqXp2veT13b9lF+HIv9XQLWUl9lKD1pqErV5q0FqXW9rDXMKOHvZU0Wcaf0xY95nGReETzCVcPbQwl3D10MISunMR/vOofwc+gpxC95cZpYL765pSAQD2H6gjJwuhWQrmAAAAAElFTkSuQmCC");}
+.i-profile{ background-size: 1.45rem auto; background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAgCAYAAACYTcH3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIxSURBVFhHxZYxUgJBEEVJjIw8gJkHMCY08ALEZGbGHoDY1EACYiNAqkhIjIgoDuV/U79l2WLZWXbUX/VL7On+0zsz3TODS7Ber2+Wy+VYfBM34s7kN7YxPnb/PWiikbgV9xVGMlUbPiOHlYfEWY00+WKxeNXfYXUFvGJDj0VyYw+Xw2q1uvMEJPJocyPwCX9ibS4Df+1+Pp8/29QKfIkh1qb+2Gw21/7KLb9tboW3jbOz6xJ3FhIbinzhu03ZIIZYNGzqBwlRQSTzYlM2iHEyZSpLQlFFTzZlgxjHlqkqhCzYJ5nOsSchobRNXSopEBWFhk39IMEHC05sygYxxKJhUz+44ZHMh03ZIIbYoo1PVfEl0V2XC9B9ho79ZVMZSDQtt5i99/g6pvP2noUE7y38OZ1Or2xuBD74Oube5nKQKG8VxFvLFB/7vtlUFq6qdBOLjU1MY2xPusuK39gSvRU5M0zA1ybqYP68aWpvGcaznhrZYAIJcrdEEtzAT14hnpg/idXIWJmLkevenTOel3zlS7Ws/ayIdzAHFab3b/W5oP9nYj3ZOmd2P8AVMNbE9BSc4nl5a5fOYCJrneNxMjJwLlK3DAexfEm2QZOSSJyBz2L3SFd476M5TXIa2q9BCaTmxNmwqRikm3NegjMCYlUuPqRNYAJr5zAlkzqq4/8XSiR6yd9XTh1KIi4/tut/E/IrLlYHbml6bazFVHnUwPi/Nn6KhxgnxAo1TdCFFyYzGHwDL3ZTCO1ae54AAAAASUVORK5CYII=");}
+.i-more{background-size: 1.41rem auto; background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAKCAYAAADRuIyZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACZSURBVDhPzZPLCYAwEERztxptIhXYTHrJKed8runOnTCGoIIKLjiwIe48YfIzu2KMS87ZSXmWK6XMtE9S4VNKqxjhquAR61LhkYpNpLS11gmFOXsBq2mwSI2XCbYLoOW/XejRc2zp8TK0VEhJv4vJAXq29PjHIKXGy/CPo+GzwgeS314+VV7lOQ56xTM5thEpUW5c2VHf8sZskkAdGxFEXCgAAAAASUVORK5CYII=");}
+
+
+

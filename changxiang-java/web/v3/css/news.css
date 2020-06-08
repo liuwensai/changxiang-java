@@ -1,0 +1,26 @@
+@charset "utf-8";
+/*================================================
+Version:0.0.1
+Author:LeoCmq # 163.com
+================================================*/
+.mi_banner{ background:url(../../images/common/mibg.jpg) no-repeat center center;position: relative; background-size: 100% 100%; height: 17.5rem;}
+.mi_banner .site_name{text-shadow: 0.1875rem 0.32475rem .333rem rgb( 204, 0, 0 ); font-size: 2.5rem; color:#fff; font-weight: 700; padding: 1.33rem; padding-bottom: .3rem;}
+.mi_banner .slogan{font-size: 1.13rem;text-shadow: 0.1875rem 0.32475rem .333rem rgb( 204, 0, 0 );color: #fff; padding-left: 1.4rem;}
+
+.mi_banner .version{ position: absolute; left:1.66rem; bottom: 1.08rem; color: #eb8074; }
+.about_info{padding:1.33rem 1.66rem; line-height: 1.95rem; font-size:1.16rem;}
+.about_info img{ width:26.66rem;}
+.about_info .centxt{ line-height: 1.95rem; font-size:1rem;}
+.about_info .centxt p{ text-indent:2em;}
+.p-account_about.fullscreen{}
+.p-account_about.fullscreen+.footer{margin-top: -4.58rem; height: 4.58rem;}
+
+.actbox{ border:1px dashed #bfbfbf; padding:0.83rem; border-radius:0.625rem;}
+.nw_banner{ height:11.25rem;}
+.nw_banner img{ height:11.25rem;}
+
+.news_info{display: table; width: 100%;border: #d8d7d7 solid 1px; box-sizing: border-box; border-collapse: collapse; text-align: center;}
+.news_info li{display:table-row;}
+.news_info .td{display: table-cell; border-bottom: #d8d7d7 solid 1px; vertical-align: middle; font-size: 1rem; }
+.news_info .th .td{ height: 2.375rem; background-color: #f4f4f4; color: #9f9f9f; font-size:1rem;  border-right:1px solid #ddd;}
+.news_info .tr .td{padding: .79rem .3rem; width: auto; border-right:1px solid #ddd; }

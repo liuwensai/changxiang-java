@@ -1,0 +1,194 @@
+.qr-code{
+    padding:30px;
+}
+.qr-code em{
+    width:295px;
+    text-align:center;
+    margin:0;
+}
+.qr-code img{
+    width:auto;
+    display:block;
+    max-width:660px;
+    margin:0 auto;
+    padding:0;
+}
+.qr-code em{
+    height:295px;
+    line-height:295px;
+    border:1px solid #dedede;
+    border-radius:3px;
+}
+.account-tab .tab-head li.active a{
+    background:none;
+    font-weight:bold;
+    color:#fff;
+}
+.inline-recharge form{
+    display:block;
+    width:530px;
+    height:40px;
+    margin:auto;
+}
+.inline-recharge label{
+    width:66px;
+    float:left;
+    line-height:40px;
+}
+.inline-recharge input, .inline-recharge button{
+    float:left;
+    height:40px;
+    box-sizing:border-box;
+    width:120px;
+}
+.inline-recharge input{
+    width:410px;
+    padding:10px;
+    line-height:20px;
+}
+.inline-recharge li{
+    float:left;
+    height:38px;
+    text-align:center;
+    border-radius:3px;
+    line-height:100%;
+    margin-right:5px;
+    padding:0 10px;
+    cursor:pointer;
+}
+.inline-recharge em{
+    display:block;
+    line-height:22px;
+}
+.inline-recharge button{
+    margin:20px 0 0 66px;
+}
+.inline-recharge li.active{
+    border-color:#ba2636;
+    color:#ba2636;
+}
+.inline-yyb form{
+    width:auto;
+    height:auto;
+}
+.inline-input .input-text{
+    color:#929292;
+    cursor:pointer;
+    height:39px;
+    line-height:39px;
+    overflow:hidden;
+    position:relative;
+    width:273px;
+    border:1px solid #BDCED8;
+    border-radius:2px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:14px;
+    font-weight:bold;
+    font-style:normal;
+    float:left;
+}
+.inline-input .input-text code{
+    font-weight:bold;
+    font-size:14px;
+}
+.inline-input i{
+    position:absolute;
+    width:40px;
+    height:39px;
+    right:0;
+    top:0;
+    background:url(../../images/icons.png?v=3) no-repeat -384px -112px;
+}
+.inline-yyb .inline-input.show i{
+    background-position:-424px -112px;
+}
+.inline-input label{
+    line-height:41px;
+}
+.inline-input{
+    height:41px;
+    line-height:41px;
+    position:relative;
+}
+.input-text input{
+    border:0;
+    background:#fff;
+    padding:0;
+    width:235px;
+    padding:9px;
+    outline:none;
+}
+.inline-input .fast-input{
+    position:absolute;
+    background:#FFF;
+    border:1px solid #92B1CE;
+    box-shadow:1px 3px 3px #CCCCCC;
+    overflow:hidden;
+    padding:15px;
+    width:600px;
+    top:41px;
+    left:66px;
+    display:none;
+    z-index:100;
+}
+.inline-input.show .fast-input{
+    display:block;
+}
+.inline-yyb ul{
+    border:1px dashed #ccc;
+    border-bottom:0;
+    border-right:0;
+}
+.inline-yyb ul li{
+    width:12.5%;
+    box-sizing:border-box;
+    float:left;
+    border:1px dashed #ccc;
+    padding:0;
+    margin:0;
+    border-width:0 1px 1px 0;
+    line-height:38px;
+}
+.inline-prompt, .inline-remarks{
+    text-align:left;
+    text-indent:66px;
+    margin-top:15px;
+}
+.inline-prompt{
+    margin-top:30px;
+}
+.inline-prompt i{
+    display:inline-block;
+    background:url(../../images/icons.png?v=3) no-repeat -451px -88px;
+    cursor:pointer;
+    vertical-align:middle;
+    margin-right:3px;
+    width:13px;
+    height:13px;
+}
+.inline-yyb button.inline-submit{
+    border:none;
+    color:#FFFFFF;
+    cursor:pointer;
+    display:block;
+    font-size:16px;
+    font-weight:bold;
+    height:39px;
+    padding-left:34px;
+    padding-right:39px;
+    position:relative;
+    width:220px;
+    background:#369ACC;
+    border-radius:3px;
+}
+.inline-checkbox{
+    clear:both;
+    padding:10px 0 0 66px;
+}
+.inline-checkbox input, .inline-checkbox label, .inline-checkbox span{
+    float:left;
+    width:auto;
+    height:auto;
+    line-height:100%;
+    margin:0 2px;
+}

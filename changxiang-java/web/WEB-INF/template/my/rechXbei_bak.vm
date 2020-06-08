@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="keywords" content=""/>
+<meta name="description" content=""/>
+<title>我的彩票</title>
+<link rel="stylesheet" href="/css/base.css"/>
+<link rel="stylesheet" href="/css/core.css"/>
+<link rel="stylesheet" href="/css/userCenter/common.css"/>
+<link rel="stylesheet" href="/css/userCenter/myLott.css"/>
+<link rel="stylesheet" href="/css/userCenter/bankLogo.css"/>
+<script src="/js/jquery-1.7.2.min.js"></script>
+<script src="/js/local.js"></script>
+</head>
+<body class="">
+#parse("/head.vm")
+<article class="docBody clearfix">
+    #set($listint=3)
+	#parse("/my/MyList.vm")
+    <div class="rightModule">
+		<ul class="redTab">
+			#if($xbei=='0')<li#if($pay=='xbei') class="active"#end><a href="/my/Rechange.jzh?pay=xbei" target="_self">微信支付</a></li>#end
+			#if($alipay=='0')<li#if($pay=='alipay') class="active"#end><a href="/my/Rechange.jzh?pay=alipay" target="_self">支付宝充值</a></li>#end
+			#if($huichao=='0')<li#if($pay=='huichao') class="active"#end><a href="/my/Rechange.jzh?pay=huichao" target="_self">在线支付</a></li>#end
+			<li><a href="/my/Rechange!RechDesc.jzh" target="_self">充值记录</a></li>
+		</ul>
+        <div class="orderDataBox grayBorder">
+				<ul style="padding-bottom:0" class="pay_form">
+					<li style="margin-bottom:10px">
+						<div class="f_left">支付方式：</div>
+						<div class="f_right">
+							<table>
+								<tbody>
+									<tr>
+										<td>
+											<img src="/img/WePayLogo.png" />
+											<!--
+											<div id="bankCardSelectHand" class="selectBankBox inputs">
+												<span id="bankCardSelectBank"><span class="bankLogo b_0001"></span><em class="activeBorder"></em></span>
+												<span id="selectBankBtn" class="selectBankBtn"></span> 
+											</div>
+											-->
+										</td>
+										<td>
+											<span class="err" id="bankCode_err">&nbsp;</span>
+										</td>
+									</tr>
+								</tbody>
+							</table>  
+						
+                    		<div style="line-height:14px;padding-top:10px;">
+                    			<span style="display: inline;"><em class="help_tip"></em>建议使用IE浏览器继续，以便正常使用充值功能。</span>
+                    		</div>
+      					</div>
+					</li>
+					<span id="payOnlineForm1box" style="display: block;">
+						<li>
+							<div class="f_left">充值金额：</div>
+                            <div class="f_right">
+								<span style="position:relative; display:inline-block">
+									<input type="text" onpaste="return false" autocomplete="off" maxlength="6" style="width:130px" id="amount" class="inputs" onkeyup="this.value=this.value.replace(/\D/g,'')"/>
+								</span>
+								元 <span id="amount_err" class="err">&nbsp;</span>
+                         	</div>
+						</li>	
+					</span>
+	<!--开快捷提示信息 开始-->
+    <li style="display:block;" id="bankQuickBInfoBox">
+      <div class="f_left">&nbsp;</div>
+      <div class="f_right"><span class="quickPayOnline">即时到账，充值免收手续费，最小充值金额50元<!--最小充值金额10元,最大5万--></span></div>
+    </li>
+    <!--开快捷提示信息 结束-->
+    <li id="goPayOnlineBtnBox" class="btnLi" style="display: block;">
+      <div class="f_left">&nbsp;</div>
+      <div class="f_right"> 
+	  	<span class="btn1Box">
+        <button class="btn1" type="button" id="bankCardSumbit">确认,去微信扫码支付充值</button>
+        </span> 
+		<div class="btnInfo">
+			<input type="checkbox" checked="checked" name="" value="" id="quickPayCheckBox"> 我同意<a href="" style="color:#2579A7" target="_blank">《赐福支付服务协议》</a>		
+		</div>
+	  </div>
+    </li>
+  </ul>
+<form action="/pay/xbei/payXbeiSubmit.jsp" method="post" id="myform" target="_blank">
+	<input type="hidden" name="pa_MP" value="$!user.user_name"/>
+	<input type="hidden" name="p3_Amt" id="v_money" value=""/>
+	<input type="hidden" name="bankId" id="v_bank" value="100040"/>
+</form>
+<script>
+$('#amount').keyup(function(){
+	var m = $(this).val().replace(/\D/g,'');
+	$(this).val(m);
+	$('#v_money').val(m);
+});
+$('#bankCardSumbit').click(function(){
+	if($('#quickPayCheckBox').is(":checked")){
+		var mon = $('#v_money').val();
+		if(mon<50){
+			alert('最少需充值50元。');return;
+		}else if(mon>50000){
+			alert('单笔最多充值50000元。');return;
+		}
+		$("#myform").submit();
+	}else{
+		alert('您必须同意充值协议！');
+	}
+});
+</script>
+</div>
+#include("/my/MyHot.vm")
+</div>
+</article>
+#include("/foot.vm")
+</body>
+</html>

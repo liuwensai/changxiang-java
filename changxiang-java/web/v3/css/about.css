@@ -1,0 +1,11 @@
+@charset "utf-8";
+/*================================================
+Version:0.0.1
+Author:LeoCmq
+================================================*/
+/* 关于我们 */
+.mi_banner{ background:url(../images/common/mibg.jpg) no-repeat center center;position: relative; background-size: 100% 100%; height: 17.5rem;}
+.mi_banner .site_name{text-shadow: 0.1875rem 0.32475rem .333rem rgb( 204, 0, 0 ); font-size: 2.5rem; color:#fff; font-weight: 700; padding: 1.33rem; padding-bottom: .3rem;}
+.mi_banner .slogan{font-size: 1.13rem;text-shadow: 0.1875rem 0.32475rem .333rem rgb( 204, 0, 0 );color: #fff; padding-left: 1.4rem;}
+
+.mi_banner .version{ position: absolute; left:1.66rem; bottom: 1.08rem; color: #eb8074; }
